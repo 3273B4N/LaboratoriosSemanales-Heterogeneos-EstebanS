@@ -13,7 +13,7 @@ xychart-beta
     title "Tiempo real vs número de hilos CPUNaive"
     x-axis [1, 2, 3, 4, 5, 6]
     y-axis "Tiempo (s)" 0 --> 16
-    line [2.46,4.92,7.41,9,88,12.33,14.77]
+    line [2.46,4.92,7.41,9.88,12.33,14.77]
 ```
 
 ## Parte B
