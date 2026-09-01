@@ -5,7 +5,7 @@ xychart-beta
     title "Tiempo real vs número de hilos CPUAffinity"
     x-axis [1, 2, 3, 4, 5, 6]
     y-axis "Tiempo (s)" 0 --> 16
-    line [2.49,4.91,7.47,9.99,12.63,15.12]
+    line [2.48,2.51,2.58,2.61,2.68,2.81]
 ```
 
 ```mermaid
@@ -13,7 +13,7 @@ xychart-beta
     title "Tiempo real vs número de hilos CPUNaive"
     x-axis [1, 2, 3, 4, 5, 6]
     y-axis "Tiempo (s)" 0 --> 16
-    line [2.46,4.92,7.41,9.88,12.33,14.77]
+    line [2.5,2.55,2.58,2.64,2.68,2.89]
 ```
 
 ## Parte B
