@@ -54,7 +54,6 @@ xychart-beta
 Una razon que podria explicar el comportamiento de ambos algoritmos se mantiene relativamente plano, es que el sistema operativo logra ejecutar cada hilo en su propio core fisico(solo 1 hilo por core para esta arquitectura). El leve incremento con más hilos se puede deber a la restriccion de recursos compartidos entre cores: por ejemplo la cache L3 y el ancho de banda de memoria por lo que cada core recibe menos recursos conforme se aumentan los hilos. Se observa tambien que cpu-naive es un poco más lento que cpu-affinity, esto se puede deber a que al no fijar afinidad, el scheduler de Linux, puede estar migrando el hilo de un core a otro durante su ejecución lo cual causa invalidaciones de cache y recargas que consumen más tiempo.
 
 
-```
 
 ## Parte B
 
