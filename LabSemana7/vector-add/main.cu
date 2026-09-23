@@ -16,10 +16,10 @@
 
 __global__ void vector_add_kernel(const float *a, const float *b, float *c,
                                   int n) {
-    int i = blockIdx.x * blockDim.x + threadIdx.x;
+    int i = blockIdx.x * blockDim.x + threadIdx.x; // calcula el indice global del hilo
 
-    if (i < n) {
-        // TODO: Calcule c[i] = a[i] + b[i].
+    if (i < n) { // la condicion i < necesaria ya que se asigna una suma a cada hilo disponible, esto mientras el numero del hilo (que debe ser el numero de hilos disponibles) sea menor al numero del vector que se va asumar
+         c[i] = a[i] + b[i];
     }
 }
 
